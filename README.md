@@ -8,7 +8,7 @@ python学习笔记
 ・GitHubを用いたチーム開発の実務経験
 
 # 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
-![image](http://github.com/qiulongquan/python_studynote/raw/master/image/11.JPG)
+![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/11.JPG "description1")
 剑指offer牛客网      面试题目 刷题练习
 https://www.nowcoder.com/courses/10
 
