@@ -19,7 +19,7 @@ python学习笔记
 
 
 # 名词解释  未处理
-Dockerを利用したサービス運用経験
+
 Tornado
 Yarn
 
@@ -339,6 +339,11 @@ http://edu.51cto.com/course/15008.html
 企业级客户管理SaaS服务——企点产品使用介绍 
 * PaaS（Platform As A Service，平台即服务）的观念
 * IaaS：基础设施服务，Infrastructure-as-a-service
+
+
+Dockerを利用したサービス運用経験
+* 原理
+Docker核心解决的问题是利用LXC来实现类似VM的功能，从而利用更加节省的硬件资源提供给用户更多的计算资源。同VM的方式不同, LXC 其并不是一套硬件虚拟化方法 - 无法归属到全虚拟化、部分虚拟化和半虚拟化中的任意一个，而是一个操作系统级虚拟化方法, 理解起来可能并不像VM那样直观。
 
 
 Redis   了解
