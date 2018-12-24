@@ -121,8 +121,8 @@ TreasureData、TreasureWorkflowを利用した集計処理の開発経験
 
 
 csdn学院    很不错的网络全方面教学 包括python
-https://edu.csdn.net/courses/o317_k
-![description2](https://github.com/qiulongquan/python_studynote/blob/master/image/2.JPG "description2")
+* https://edu.csdn.net/courses/o317_k
+![description2](https://github.com/qiulongquan/python_studynote/blob/master/image/2.jpg "description2")
 
 # Python大数据
 
