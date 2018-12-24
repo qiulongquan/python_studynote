@@ -3,17 +3,16 @@ python_studynote
 python学习笔记
 	
 # 现在   python后端开发   大数据处理hadoop  数据分析   +   AWS 掌握
-
 # 将来目标   机器学习      数据挖掘  
 
-# 每天  写一些代码   并且 发布到github上去
-* GitHubを用いたチーム開発の実務経験
-* github 使用方法 http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html
+* 每天  写一些代码   并且 发布到github上去
+	* GitHubを用いたチーム開発の実務経験
+	* github 使用方法 http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html
 
-# 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
+* 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/11.JPG "description1")
-剑指offer牛客网      面试题目 刷题练习
-https://www.nowcoder.com/courses/10
+	* 剑指offer牛客网      面试题目 刷题练习
+	* https://www.nowcoder.com/courses/10
 
 
 # 名词解释  未处理
