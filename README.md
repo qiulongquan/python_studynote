@@ -332,12 +332,13 @@ https://agency-star.com/
 
 云计算    AI时代
 
-
-SaaS 
-SaaS（Software As A Service，软件即服务）的观念
+IaaS，PaaS，SaaS 的区别
+http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html
+* SaaS（Software As A Service，软件即服务）的观念
 http://edu.51cto.com/course/15008.html
 企业级客户管理SaaS服务——企点产品使用介绍 
-PaaS（Platform As A Service，平台即服务）的观念
+* PaaS（Platform As A Service，平台即服务）的观念
+* IaaS：基础设施服务，Infrastructure-as-a-service
 
 
 Redis   了解
