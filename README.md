@@ -16,13 +16,7 @@ python学习笔记
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/11.JPG "description1")
 	* 剑指offer牛客网      面试题目 刷题练习
 	* https://www.nowcoder.com/courses/10
-
-
-# 名词解释  未处理
-
-
-
-Yarn
+	
 
 
 # Python（Django）のご経験     重要
@@ -340,6 +334,11 @@ http://edu.51cto.com/course/15008.html
 企业级客户管理SaaS服务——企点产品使用介绍 
 * PaaS（Platform As A Service，平台即服务）的观念
 * IaaS：基础设施服务，Infrastructure-as-a-service
+
+
+Yarn
+* Apache Hadoop YARN （Yet Another Resource Negotiator，另一种资源协调者）是一种新的 Hadoop 资源管理器，它是一个通用资源管理系统，可为上层应用提供统一的资源管理和调度，它的引入为集群在利用率、资源统一管理和数据共享等方面带来了巨大好处。
+
 
 
 Tornado
