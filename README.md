@@ -20,7 +20,8 @@ python学习笔记
 
 # 名词解释  未处理
 
-Tornado
+
+
 Yarn
 
 
@@ -339,6 +340,14 @@ http://edu.51cto.com/course/15008.html
 企业级客户管理SaaS服务——企点产品使用介绍 
 * PaaS（Platform As A Service，平台即服务）的观念
 * IaaS：基础设施服务，Infrastructure-as-a-service
+
+
+Tornado
+* Tornado是一种 Web 服务器软件的开源版本。Tornado 和现在的主流 Web 服务器框架（包括大多数 Python 的框架）有着明显的区别：它是非阻塞式服务器，而且速度相当快。
+* 得利于其非阻塞的方式和对epoll的运用，Tornado 每秒可以处理数以千计的连接，因此 Tornado 是实时 Web 服务的一个 理想框架。
+
+epoll
+* epoll是Linux内核为处理大批量文件描述符而作了改进的poll，是Linux下多路复用IO接口select/poll的增强版本，它能显著提高程序在大量并发连接中只有少量活跃的情况下的系统CPU利用率。
 
 
 Dockerを利用したサービス運用経験
