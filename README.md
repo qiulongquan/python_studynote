@@ -5,7 +5,8 @@ python学习笔记
 # 将来目标   机器学习      数据挖掘  
 
 # 每天  写一些代码   并且 发布到github上去
-・GitHubを用いたチーム開発の実務経験
+・GitHubを用いたチーム開発の実務経験b 
+github 使用方法 http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html
 
 # 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/11.JPG "description1")
