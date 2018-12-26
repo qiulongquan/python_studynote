@@ -153,19 +153,18 @@ Python线程、进程    介绍下协程，为何比线程还快;
 * 第6种：装饰器 decorator的知识点 闭包
  * 闭包能够完成较为复杂的功能,包含功能和数据,传递的是数据+功能(即外层函数能保存接收的数据给里面的函数使用) 
  * 闭包也具有提高代码可复用性的作用. 
-def line_6(k, b):
-    def create_y(x):
-        print(k*x+b)
-    return create_y
-
-line_6_1 = line_6(1, 2)    函数调用   函数引用
-line_6_1(0)
-line_6_1(1)
-line_6_1(2)
-line_6_2 = line_6(11, 22)
-line_6_2(0)
-line_6_2(1)
-line_6_2(2)
+	def line_6(k, b):
+    	def create_y(x):
+        	print(k*x+b)
+    	return create_y
+	line_6_1 = line_6(1, 2)    函数调用   函数引用
+	line_6_1(0)
+	line_6_1(1)
+	line_6_1(2)
+	line_6_2 = line_6(11, 22)
+	line_6_2(0)
+	line_6_2(1)
+	line_6_2(2)
 --------------------- 
 用Python实现快排    手写快排;堆排;几种常用排序的算法复杂度是多少;快排平均复杂度多少，最坏情况如何优化;
 如果系统中需要很多个Python版本，如何进行Python版本的管理
