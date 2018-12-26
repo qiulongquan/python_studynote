@@ -152,11 +152,11 @@ Python线程、进程    介绍下协程，为何比线程还快;
 * 装饰器 解释 https://blog.csdn.net/u010358168/article/details/77773199
 * 第6种：装饰器 decorator的知识点 闭包
  * 闭包能够完成较为复杂的功能,包含功能和数据,传递的是数据+功能(即外层函数能保存接收的数据给里面的函数使用) 
- * 闭包也具有提高代码可复用性的作用. 
+ * 闭包也具有提高代码可复用性的作用.   
 	def line_6(k, b):  
-    	def create_y(x):  
-        	print(k*x+b)  
-    	return create_y  
+    		def create_y(x):  
+        		print(k*x+b)  
+    		return create_y  
 	line_6_1 = line_6(1, 2)    函数调用   函数引用  
 	line_6_1(0)  
 	line_6_1(1)  
