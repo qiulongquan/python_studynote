@@ -259,9 +259,11 @@ google那种验证码， 没办法。
 
 
 # Sparkの実務経験 　重要
-・Sparkなどの大規模分散処理技術を用いたデータ分析の実務経験　
+* Spark是一个用来实现快速而通用的集群计算的平台。扩展了广泛使用的MapReduce计算模型，而且高效地支持更多的计算模式，包括交互式查询和流处理。在处理大规模数据集的时候，速度是非常重要的。Spark的一个重要特点就是能够在内存中计算，因而更快。即使在磁盘上进行的复杂计算，Spark依然比MapReduce更加高效。
+* Spark编程模型(一) https://www.cnblogs.com/miqi1992/p/5621268.html
+* Sparkなどの大規模分散処理技術を用いたデータ分析の実務経験　
 http://edu.51cto.com/course/12824.html
-【Python版pyspark】Spark大数据基础入门视频课程 
+* 【Python版pyspark】Spark大数据基础入门视频课程 
 https://www.shiyanlou.com/courses/1003   Spark机器学习--运用逻辑回归分析银行营销数据 
 
 
