@@ -54,7 +54,7 @@ Flask框架开发
 (7) VIM使用
 (8) 软件包管理
 (9) 用户和用户组管理
-(10) Linux Shell开发
+(10) Linux Shell开发　　shell的编写开发要看一下  版本要注意一下  实验楼的是ubuntu dash  有些shell执行有错误
 gcc工具链
 centOS 软件安装与卸载
 常用服务器 ssh  ftp
