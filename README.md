@@ -141,7 +141,12 @@ csdn学院    很不错的网络全方面教学 包括python
 # Python相关知识点
 https://www.shiyanlou.com/courses/764   Python 数据分析入门与进阶
 https://baijiahao.baidu.com/s?id=1612813358659183691&wfr=spider&for=pc   python 知识点
-设计模式   实现一个单例模式    工厂模式
+设计模式   
+* 实现一个单例模式
+	拦截类的创建
+	修改类的定义
+	返回修改后的类
+* 工厂模式
 开发框架
 RDBMSを用いた開発経験
 类与对象，继承，多态
