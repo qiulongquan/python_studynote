@@ -174,7 +174,13 @@ Python线程、进程    介绍下协程，为何比线程还快;
 
 2. 堆排;
 3. 几种常用排序的算法复杂度是多少;
+![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/各种排序算法时间复杂度.jpeg "description1")
+![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/时间复杂度线性函数.jpeg "description1")
+![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/时间复杂度线性函数2.jpeg "description1")
 4. 快排平均复杂度多少，最坏情况如何优化;
+	* 快速排序和冒泡排序是经常使用的排序方法 但是快速排序的效率更高 
+	* 快速排序最优的情况下时间复杂度为：O( nlogn )
+	* 快速排序最差的情况下时间复杂度为：O( n^2 )
 
 5. 如果系统中需要很多个Python版本，如何进行Python版本的管理
 6. 如何实现一个全局变量？(除了global,还可以通过单例模式)
