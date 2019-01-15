@@ -189,7 +189,10 @@ Python线程、进程    介绍下协程，为何比线程还快;
 	* 当Python2和Python3同时存在于windows上时，它们对应的pip都叫pip.exe，所以不能够直接使用 pip install 命令来安装软件包。而是要使用启动器py.exe来指定pip的版本。命令如下： py -2 -m pip install XXXX       py -3 -m pip install XXXX    
 	
 6. 如何实现一个全局变量？(除了global,还可以通过单例模式)
-
+	* 总结：如果要在函数中给全局变量赋值，需要用global关键字声明。
+![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/global全局变量.jpg "description1")
+![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/global全局变量1.jpg "description1")
+	
 
 数据库CRUD操作/查询优化以及数据库知识量
 框架的对比和了解/项目具体模块的业务逻辑描述
