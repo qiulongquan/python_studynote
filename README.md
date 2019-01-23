@@ -36,6 +36,10 @@ django环境搭建
 2. 安装方法
 	* https://www.cnblogs.com/freeweb/p/5181764.html
 	* 需要注意的地方看自己录制的视频  linux环境python3和django安装
+3. root权限
+	* 不能直接root 进去后 sudo su即可
+	* AWS的ec2-user切换到root登陆后直接sudo -i
+	* 表示以root身份登录，进程的实际用户ID和有效用户ID都变成了root，主目录也切换为root的主目录。
 	
 django-admin startproject mysite
 你看过django的admin源码么;看过flask的源码么;你如何理解开源;
