@@ -27,8 +27,13 @@ django项目实战之购物系统
 web开发框架   django
 django环境搭建
 1.2 实验环境
-•Python==3.5.2
-•Django==2.0.6
+•Python==3.6.4
+•Django==2.1.1   要使用新版本的django 2.1.1
+
+# linux 下 安装python3 和 django环境
+1. 错误：no acceptable C compiler found in $PATH
+	* 解决办法：安装GCC软件套件   yum install gcc
+	
 django-admin startproject mysite
 你看过django的admin源码么;看过flask的源码么;你如何理解开源;
 CSRF是什么，django是如何避免的;XSS呢;
