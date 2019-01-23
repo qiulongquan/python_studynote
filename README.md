@@ -33,6 +33,9 @@ django环境搭建
 # linux 下 安装python3 和 django环境
 1. 错误：no acceptable C compiler found in $PATH
 	* 解决办法：安装GCC软件套件   yum install gcc
+2. 安装方法
+	* https://www.cnblogs.com/freeweb/p/5181764.html
+	* 需要注意的地方看自己录制的视频  linux环境python3和django安装
 	
 django-admin startproject mysite
 你看过django的admin源码么;看过flask的源码么;你如何理解开源;
