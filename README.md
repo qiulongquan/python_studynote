@@ -212,19 +212,17 @@ https://baijiahao.baidu.com/s?id=1612813358659183691&wfr=spider&for=pc   python 
 		* 快速排序和冒泡排序是经常使用的排序方法 但是快速排序的效率更高 
 		* 快速排序最优的情况下时间复杂度为：O( nlogn )
 		* 快速排序最差的情况下时间复杂度为：O( n^2 )
-	5. 如果系统中需要很多个Python版本，如何进行Python版本的管理
-	    * https://blog.csdn.net/qq_22194315/article/details/77968609
-	    * 我们在安装Python3（>=3.3）时，Python的安装包实际上在系统中安装了一个启动器py.exe，默认放置在文件夹C:\Windows\下面。   
-	    这个启动器允许我们指定使用Python2还是Python3来运行代码（当然前提是你已经成功安装了Python2和Python3）。
-	    * py -2 tab.py 
-	        * python2版本启动   #! python2      
-	    * py -3 tab.py  
-	        * python3版本启动   #! python3
-	    * 当Python2和Python3同时存在于windows上时，它们对应的pip都叫pip.exe，所以不能够直接使用 pip install 命令来安装软件包。    
-	    而是要使用启动器py.exe来指定pip的版本。    
-	    命令如下： 
-		    py -2 -m pip install XXXX       
-	            py -3 -m pip install XXXX    
+	5. 如果系统中需要很多个Python版本，如何进行Python版本的管理    
+	   1. https://blog.csdn.net/qq_22194315/article/details/77968609
+	   2. 我们在安装Python3（>=3.3）时，Python的安装包实际上在系统中安装了一个启动器py.exe，默认放置在文件夹C:\Windows\下面。这个启动器允许我们指定使用Python2还是Python3来运行代码（当然前提是你已经成功安装了Python2和Python3）。
+	   3. py -2 tab.py 
+	      1. python2版本启动   #! python2      
+	   4. py -3 tab.py  
+	      1. python3版本启动   #! python3
+	   5. 当Python2和Python3同时存在于windows上时，它们对应的pip都叫pip.exe，所以不能够直接使用 pip install 命令来安装软件包。而是要使用启动器py.exe来指定pip的版本。
+	      1. 命令如下： 
+	         1. py -2 -m pip install XXXX       
+	         2. py -3 -m pip install XXXX    
 	
 	6. 如何实现一个全局变量？(除了global,还可以通过单例模式)
 		* 总结：如果要在函数中给全局变量赋值，需要用global关键字声明。
