@@ -49,17 +49,21 @@ django项目实战之购物系统
 4. Django model select获取数据详细讲解 主要是程序中使用到的一些sql文的使用方法
 	* https://segmentfault.com/a/1190000016053857
 5. Django数据库操作之save与update
-	1. 使用save:
-	* k = Example.objects.get(id=481)
-	* k.total_calories = 12
-	* k.save()
-	2. 使用 update
-	* Example.objects.filter(id=481).update(total_calories = 10)
-	3. 从SQL的执行情况来看,使用upate是要优于save方式的。
-	* 从使用情境上看，update更加适用于批量数据更新，而save则更适合当然也只适合做单条记录的数据更新操作了。
+	* 使用save:
+		* k = Example.objects.get(id=481)
+		* k.total_calories = 12
+		* k.save()
+	* 使用 update
+		* Example.objects.filter(id=481).update(total_calories = 10)
+	* 从SQL的执行情况来看,使用upate是要优于save方式的。
+		* 从使用情境上看，update更加适用于批量数据更新，而save则更适合当然也只适合做单条记录的数据更新操作了。
 
-你看过django的admin源码么;看过flask的源码么;你如何理解开源;
-CSRF是什么，django是如何避免的;XSS呢;
+你看过django的admin源码么;    
+看过flask的源码么;你如何理解开源;    
+CSRF是什么，django是如何避免的;   
+XSS呢;
+- test1
+- test2
 
 # フレームワーク　　web开发框架   Flask    framwork  
 Flask框架开发
