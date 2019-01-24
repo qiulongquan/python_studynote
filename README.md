@@ -46,7 +46,18 @@ django项目实战之购物系统
 	* 不能直接root 进去后 sudo su即可
 	* AWS的ec2-user切换到root登陆后直接sudo -i
 	* 表示以root身份登录，进程的实际用户ID和有效用户ID都变成了root，主目录也切换为root的主目录。
-	
+4. Django model select获取数据详细讲解 主要是程序中使用到的一些sql文的使用方法
+	* https://segmentfault.com/a/1190000016053857
+5. Django数据库操作之save与update
+	* 使用save:
+		k = Example.objects.get(id=481)
+		k.total_calories = 12
+		k.save()
+	* 使用 update
+		使用update
+		Example.objects.filter(id=481).update(total_calories = 10)
+	* 从SQL的执行情况来看,使用upate是要优于save方式的。
+		从使用情境上看，update更加适用于批量数据更新，而save则更适合当然也只适合做单条记录的数据更新操作了。
 
 你看过django的admin源码么;看过flask的源码么;你如何理解开源;
 CSRF是什么，django是如何避免的;XSS呢;
