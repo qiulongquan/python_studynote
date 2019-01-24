@@ -19,24 +19,24 @@ python学习笔记
 	
 
 
-# Python（Django）のご経験     重要
+## Python（Django）のご経験     重要
 麦子学院
 http://www.maiziedu.com/line/python/#
 django项目实战之购物系统
 本课程将使用Python语言与Django Web开发框架搭建一个强大的购物系统。通过本项目的学习，全面系统地掌握使用Django开发出功能强大的网站， 更重要地是让学员掌握Web开发从设计到部署的一整套流程，有能力根据自身需求去实现功能或者在现有基础上进行扩展。
 
-# web开发框架   django
+### web开发框架   django
 	 M:模型（Model）,负责业务对象和数据库的关系映射。
 	 T:模板（Template）,负责如何把页面展示给用户。
 	 V:视图（View）,负责业务逻辑，并在适当时候调用模型和模板。
 ![description2](https://github.com/qiulongquan/python_studynote/blob/master/image/mtv结构图.jpg "description2")
 
-# django环境搭建
+### django环境搭建
 	Python==3.6.4
 	Django==2.1.1 
 	要使用新版本的django 2.1.1
 
-# linux 下 安装python3 和 django环境
+### linux 下 安装python3 和 django环境
 1. 错误：no acceptable C compiler found in $PATH
 	* 解决办法：安装GCC软件套件   yum install gcc
 2. 安装方法
@@ -75,7 +75,7 @@ Flask框架开发
  [1]  也叫全端工程师(同时具备前端和后台能力)，英文Full Stack engineer。
 
 
-# Linux基础
+## Linux基础
 
 (1) 文件处理命令
 (2) 权限管理命令
@@ -113,7 +113,7 @@ Linux运维自动化开发
 讲一下你常用的Linux/git命令和作用;
 
 
-# python数据分析
+## python数据分析
 https://www.shiyanlou.com/courses/764   Python 数据分析入门与进阶
 https://www.shiyanlou.com/courses/780   Python 气象数据分析：《Python 数据分析实战》
 (1) numpy数据处理
@@ -128,14 +128,14 @@ https://www.shiyanlou.com/courses/780   Python 气象数据分析：《Python �
 TreasureData、TreasureWorkflowを利用した集計処理の開発経験 
 
 
-# python大数据
+## python大数据
 (1) Hadoop HDFS
 (2) python Hadoop MapReduce
 (3) python Spark core
 (4) python Spark SQL
 (5) python Spark MLlib
 
-# python机器学习
+## python机器学习
 (1) 机器学习基础知识简介
 (2) KNN算法
 (3) 线性回归
@@ -151,7 +151,7 @@ csdn学院    很不错的网络全方面教学 包括python
 * https://edu.csdn.net/courses/o317_k
 ![description2](https://github.com/qiulongquan/python_studynote/blob/master/image/2.jpg "description2")
 
-# Python大数据
+## Python大数据
 
 第四至第五阶段为Python全栈工程师后端，主要学习Django、 Flask以及Tornado，学员需要完成对应的实战项目
 
@@ -170,7 +170,7 @@ csdn学院    很不错的网络全方面教学 包括python
 第十阶段为Python机器学习，主要学习KNN算法、线性回归、逻辑斯蒂回归算法、决策树算法、朴素贝叶斯算法、支持向量机以及聚类k-means算法。
 
 
-# Python相关知识点
+## Python相关知识点
 https://www.shiyanlou.com/courses/764   Python 数据分析入门与进阶
 https://baijiahao.baidu.com/s?id=1612813358659183691&wfr=spider&for=pc   python 知识点
 设计模式   
@@ -188,17 +188,17 @@ https://baijiahao.baidu.com/s?id=1612813358659183691&wfr=spider&for=pc   python 
 2. 工厂模式
 	* 工厂方法模式去掉了简单工厂模式中工厂方法的静态属性，使得它可以被子类继承。对于python来说，就是工厂类被具体工厂继承。这样在简单工厂模式里集中在工厂方法上的压力可以由工厂方法模式里不同的工厂子类来分担。也就是工厂外面再封装一层。
 
-开发框架
-RDBMSを用いた開発経験
-类与对象，继承，多态
-Python线程、进程    介绍下协程，为何比线程还快;
-模块制作  发布    安装  使用
-实现一个装饰器 decorator  手写个使用装饰器实现的单例模式;
-装饰器本质上就是闭包,装饰器在不改变原函数的定义的条件下,给原函数扩展功能. 
-* 装饰器 解释 https://blog.csdn.net/u010358168/article/details/77773199
-* 第6种：装饰器 decorator的知识点 闭包
- * 闭包能够完成较为复杂的功能,包含功能和数据,传递的是数据+功能(即外层函数能保存接收的数据给里面的函数使用) 
- * 闭包也具有提高代码可复用性的作用.    
+## 开发框架
+### RDBMSを用いた開発経験
+    类与对象，继承，多态
+### Python线程、进程    介绍下协程，为何比线程还快;
+    模块制作  发布    安装  使用
+### 实现一个装饰器 decorator  手写个使用装饰器实现的单例模式;
+    装饰器本质上就是闭包,装饰器在不改变原函数的定义的条件下,给原函数扩展功能. 
+	* 装饰器 解释 https://blog.csdn.net/u010358168/article/details/77773199
+	* 第6种：装饰器 decorator的知识点 闭包
+ 	* 闭包能够完成较为复杂的功能,包含功能和数据,传递的是数据+功能(即外层函数能保存接收的数据给里面的函数使用) 
+ 	* 闭包也具有提高代码可复用性的作用.    
 
 用Python实现快排   
 1. 手写快排;
