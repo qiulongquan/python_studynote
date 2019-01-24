@@ -200,28 +200,33 @@ https://baijiahao.baidu.com/s?id=1612813358659183691&wfr=spider&for=pc   python 
  	* 闭包能够完成较为复杂的功能,包含功能和数据,传递的是数据+功能(即外层函数能保存接收的数据给里面的函数使用) 
  	* 闭包也具有提高代码可复用性的作用.    
 
-用Python实现快排   
-1. 手写快排;
-	* 先从待排序的数组中找出一个数作为基准数（取第一个数即可），然后将原来的数组划分成两部分：小于基准数的左子数组和大于等于基准数的右子数组。然后对这两个子数组再递归重复上述过程，直到两个子数组的所有数都分别有序。最后返回“左子数组” + “基准数” + “右子数组”，即是最终排序好的数组。
-
-2. 堆排;
-3. 几种常用排序的算法复杂度是多少;
+### 用Python实现快排   
+	1. 手写快排;
+		* 先从待排序的数组中找出一个数作为基准数（取第一个数即可），然后将原来的数组划分成两部分：小于基准数的左子数组和大于等于基准数的右子数组。然后对这两个子数组再递归重复上述过程，直到两个子数组的所有数都分别有序。最后返回“左子数组” + “基准数” + “右子数组”，即是最终排序好的数组。
+	2. 堆排;
+	3. 几种常用排序的算法复杂度是多少;
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/各种排序算法时间复杂度.jpeg "description1")
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/时间复杂度线性函数.jpeg "description1")
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/时间复杂度线性函数2.jpeg "description1")
-4. 快排平均复杂度多少，最坏情况如何优化;
-	* 快速排序和冒泡排序是经常使用的排序方法 但是快速排序的效率更高 
-	* 快速排序最优的情况下时间复杂度为：O( nlogn )
-	* 快速排序最差的情况下时间复杂度为：O( n^2 )
-
-5. 如果系统中需要很多个Python版本，如何进行Python版本的管理
-	* https://blog.csdn.net/qq_22194315/article/details/77968609
-	* 我们在安装Python3（>=3.3）时，Python的安装包实际上在系统中安装了一个启动器py.exe，默认放置在文件夹C:\Windows\下面。这个启动器允许我们指定使用Python2还是Python3来运行代码（当然前提是你已经成功安装了Python2和Python3）。
-	* py -2 tab.py python2版本启动   #! python2      py -3 tab.py  python3版本启动    #! python3
-	* 当Python2和Python3同时存在于windows上时，它们对应的pip都叫pip.exe，所以不能够直接使用 pip install 命令来安装软件包。而是要使用启动器py.exe来指定pip的版本。命令如下： py -2 -m pip install XXXX       py -3 -m pip install XXXX    
+	4. 快排平均复杂度多少，最坏情况如何优化;
+		* 快速排序和冒泡排序是经常使用的排序方法 但是快速排序的效率更高 
+		* 快速排序最优的情况下时间复杂度为：O( nlogn )
+		* 快速排序最差的情况下时间复杂度为：O( n^2 )
+	5. 如果系统中需要很多个Python版本，如何进行Python版本的管理
+		* https://blog.csdn.net/qq_22194315/article/details/77968609
+		* 我们在安装Python3（>=3.3）时，Python的安装包实际上在系统中安装了一个启动器py.exe，默认放置在文件夹C:\Windows\下面。这个启动器允许我们指定使用Python2还是Python3来运行代码（当然前提是你已经成功安装了Python2和Python3）。
+		* py -2 tab.py 
+			* python2版本启动   #! python2      
+		* py -3 tab.py  
+			* python3版本启动   #! python3
+		* 当Python2和Python3同时存在于windows上时，它们对应的pip都叫pip.exe，所以不能够直接使用 pip install 命令来安装软件包。    
+		而是要使用启动器py.exe来指定pip的版本。    
+		命令如下： 
+			py -2 -m pip install XXXX       
+			py -3 -m pip install XXXX    
 	
-6. 如何实现一个全局变量？(除了global,还可以通过单例模式)
-	* 总结：如果要在函数中给全局变量赋值，需要用global关键字声明。
+	6. 如何实现一个全局变量？(除了global,还可以通过单例模式)
+		* 总结：如果要在函数中给全局变量赋值，需要用global关键字声明。
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/global全局变量.jpg "description1")
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/global全局变量1.jpg "description1")
 	
