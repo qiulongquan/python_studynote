@@ -26,14 +26,15 @@ django项目实战之购物系统
 本课程将使用Python语言与Django Web开发框架搭建一个强大的购物系统。通过本项目的学习，全面系统地掌握使用Django开发出功能强大的网站， 更重要地是让学员掌握Web开发从设计到部署的一整套流程，有能力根据自身需求去实现功能或者在现有基础上进行扩展。
 
 # web开发框架   django
-	* M:模型（Model）,负责业务对象和数据库的关系映射。
-	* T:模板（Template）,负责如何把页面展示给用户。
-	* V:视图（View）,负责业务逻辑，并在适当时候调用模型和模板。
+	 M:模型（Model）,负责业务对象和数据库的关系映射。
+	 T:模板（Template）,负责如何把页面展示给用户。
+	 V:视图（View）,负责业务逻辑，并在适当时候调用模型和模板。
 ![description2](https://github.com/qiulongquan/python_studynote/blob/master/image/mtv结构图.jpg "description2")
 
 # django环境搭建
-	•Python==3.6.4
-	•Django==2.1.1   要使用新版本的django 2.1.1
+	Python==3.6.4
+	Django==2.1.1 
+	要使用新版本的django 2.1.1
 
 # linux 下 安装python3 和 django环境
 1. 错误：no acceptable C compiler found in $PATH
