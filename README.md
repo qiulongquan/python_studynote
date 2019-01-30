@@ -8,9 +8,13 @@ python学习笔记
 
 ===========================
 
-* 每天  写一些代码   并且 发布到github上去
+### 每天写一些代码，并且发布到github上去
 	* GitHubを用いたチーム開発の実務経験
-	* github 使用方法 http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html
+	* github 使用方法 
+		* https://blog.csdn.net/wangrenbao123/article/details/55511461   这个介绍的非常详细 首先推荐查看
+		* http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html   这个比较简单 很多详细的功能没有介绍
+		* https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8  这个介绍的不错可以参考
+		
 
 * 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/11.JPG "description1")
