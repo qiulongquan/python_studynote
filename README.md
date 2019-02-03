@@ -66,8 +66,8 @@ django项目实战之购物系统
 	2. sudo pip3 install mysqlclient
 	3. pip3 list 检查一下 mysqlclient是否正确安装了
 
-### AWS环境下 RDB构筑
-	1. aws中rds的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
+### AWS环境下 RDB环境构筑
+	1. aws中rds实例的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
 
 
 你看过django的admin源码么;    
