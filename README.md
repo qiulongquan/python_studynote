@@ -61,6 +61,14 @@ django项目实战之购物系统
 		* Example.objects.filter(id=481).update(total_calories = 10)
 	* 从SQL的执行情况来看,使用upate是要优于save方式的。
 		* 从使用情境上看，update更加适用于批量数据更新，而save则更适合当然也只适合做单条记录的数据更新操作了。
+6. mysqlclient 安装方法
+	1. yum install python-devel mysql-devel
+	2. sudo pip3 install mysqlclient
+	3. pip3 list 检查一下 mysqlclient是否正确安装了
+
+### AWS环境下 RDB构筑
+	1. aws中rds的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
+
 
 你看过django的admin源码么;    
 看过flask的源码么;你如何理解开源;    
