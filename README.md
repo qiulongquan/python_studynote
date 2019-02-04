@@ -92,7 +92,8 @@ django项目实战之购物系统
 	7. 使用 PuTTY 从 Windows 连接到 Linux 实例    
 	    * putty hostname：(公有 DNS (IPv4)) ec2-user@ec2-52-194-192-252.ap-northeast-1.compute.amazonaws.com
 	    * https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html
-	8. CI/CD	
+	8. CI/CD   在AWS 上设置 CI/CD 管道
+            * https://aws.amazon.com/cn/getting-started/projects/set-up-ci-cd-pipeline/?trk=gs_card	
 	    * 上記の作業を AWS CodeBuild で行う。
 
 
