@@ -14,6 +14,14 @@ python学习笔记
 		* https://blog.csdn.net/wangrenbao123/article/details/55511461   这个介绍的非常详细 首先推荐查看
 		* http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html   这个比较简单 很多详细的功能没有介绍
 		* https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8  这个介绍的不错可以参考
+	
+	* unittest書き方
+		* python unittestモジュールを用いて、python言語で記述されたプログラムの単体テストを行う方法を書いた
+実行方法は概ね以下の通り
+		1. import unittestして、unittest.TestCaseを継承したクラスのなかにテストケースを書く
+		2. この際、AssetHOGEHOGEというようなメソッドで
+		3. unittest.main()を叩くことでテストを実行する。いろいろなモジュールのテストを一挙に実行したければ、discoverを使う
+		* https://qiita.com/aomidro/items/3e3449fde924893f18ca
 		
 
 * 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
@@ -68,6 +76,15 @@ django项目实战之购物系统
 
 ### AWS环境下 RDB环境构筑
 	1. aws中rds实例的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
+	
+	2. AWS Lambda 函数
+		* 您以一个或多个 Lambda 函数 的形式将应用程序代码上传到 AWS Lambda（一种计算服务）。然后，AWS Lambda 代表您执行代码。AWS Lambda 负责预配置和管理服务器以便在调用时运行代码。
+		* https://aws.amazon.com/jp/getting-started/tutorials/run-serverless-code/?trk=gs_card
+	3. AWS SAM
+		* The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build serverless applications on AWS.
+	4. サーバーレス
+		* サーバーレスにより、俊敏性が強化され、総所有コストを抑えたモダンアプリケーションを構築できます。
+サーバーレスアプリケーションを構築することで、開発者は、クラウドでもオンプレミスでも、サーバーやランタイムの管理や操作に煩わされることなく、主力製品に集中できます。このような経費の削減によって、開発者は、拡張性と信頼性の高い優れた製品の開発に費やす時間とエネルギーを取り戻すことができます。
 
 
 你看过django的admin源码么;    
