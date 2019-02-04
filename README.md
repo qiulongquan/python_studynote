@@ -14,6 +14,8 @@ python学习笔记
 		* https://blog.csdn.net/wangrenbao123/article/details/55511461   这个介绍的非常详细 首先推荐查看
 		* http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html   这个比较简单 很多详细的功能没有介绍
 		* https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8   这个介绍的不错可以参考    
+		* gitbash 链接hostname：    
+		（mykey1.pem是密钥文件，ec2-user是用户名，52.194.192.252是dns公有ip ） ssh -i 'd:\.ssh\mykey1.pem' ec2-user@52.194.192.252 
 		
 	* unittest書き方
 	    * python unittestモジュールを用いて、python言語で記述されたプログラムの単体テストを行う方法を書いた実行方法は概ね以下の通り
@@ -87,7 +89,8 @@ django项目实战之购物系统
 	    サーバーレスアプリケーションを構築することで、開発者は、クラウドでもオンプレミスでも、サーバーやランタイムの管理や操作に煩わされることなく、主力製品に集中できます。   
 	    このような経費の削減によって、開発者は、拡張性と信頼性の高い優れた製品の開発に費やす時間とエネルギーを取り戻すことができます。
 	6. 使用pip 进行批量自动化package包的安装    pip install -r requirements.txt   
-	7. 使用 PuTTY 从 Windows 连接到 Linux 实例
+	7. 使用 PuTTY 从 Windows 连接到 Linux 实例    
+	    * putty hostname：(公有 DNS (IPv4)) ec2-user@ec2-52-194-192-252.ap-northeast-1.compute.amazonaws.com
 	    * https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html
 	8. CI/CD	
 	    * 上記の作業を AWS CodeBuild で行う。
