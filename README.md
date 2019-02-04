@@ -80,10 +80,17 @@ django项目实战之购物系统
 	    * https://aws.amazon.com/jp/getting-started/tutorials/run-serverless-code/?trk=gs_card
 	3. AWS SAM
 	    * The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build serverless applications on AWS.
-	4. サーバーレス
+	4. Amazon Route 53 注册域名方法  需要花少量的费用
+	    * https://aws.amazon.com/cn/getting-started/tutorials/get-a-domain/?trk=gs_card 
+	5. サーバーレス
 	    * サーバーレスにより、俊敏性が強化され、総所有コストを抑えたモダンアプリケーションを構築できます。   
 	    サーバーレスアプリケーションを構築することで、開発者は、クラウドでもオンプレミスでも、サーバーやランタイムの管理や操作に煩わされることなく、主力製品に集中できます。   
 	    このような経費の削減によって、開発者は、拡張性と信頼性の高い優れた製品の開発に費やす時間とエネルギーを取り戻すことができます。
+	6. 使用pip 进行批量自动化package包的安装    pip install -r requirements.txt   
+	7. 使用 PuTTY 从 Windows 连接到 Linux 实例
+	    * https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html
+	8. CI/CD	
+	    * 上記の作業を AWS CodeBuild で行う。
 
 
 你看过django的admin源码么;    
