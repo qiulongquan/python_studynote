@@ -75,6 +75,28 @@ django项目实战之购物系统
 	2. sudo pip3 install mysqlclient
 	3. pip3 list 检查一下 mysqlclient是否正确安装了
 
+### django MTV开发框架使用
+1. 前端页面的处理: 模板文件是一种文本文件,本项目中base.html为模本文件，content.html为目标文件,模板文件主要由目标文件的内容组成,   
+辅以模板的特殊语法用于替换动态的内容. 这里我们需要提一些 Django的模板语法，如下:   
+- {{}} :用于变量替换。
+- {%for i in content%}{{i}}{%endfor%} : for 循环
+- {%extends "base.html"%} : 用于指定父模板文件
+- {%block name %} ··· {%endblock%} :用于指定被替换的内容,内容名称为 name.
+- {%if 条件%} .....{% elif 条件%} ....{%else%}... {%endif%} :用于 if 语句
+
+2. template/base.html 中的form表单 
+ - 上传文件的 form 表单
+ - <form id="form" action="/" method="post" runat="server" enctype="multipart/form-data">
+ - <input id="files" name="file" multiple="multiple" style="display: none;" class="file-addr" type="file" />
+ - {% csrf_token %}
+ - <input id="bt" type="button" value="Upload File" />
+ - </form>
+ - {% csrf_token %} 是Django为了防止跨站请求攻击,所做的一个防护措施， 以后我们form表单提交按钮前都应该加上这个 {% csrf_token %}。 
+
+3. 【PythonのORM】SQLAlchemyで基本的なSQLクエリまとめ
+ - https://qiita.com/bokotomo/items/a762b1bc0f192a55eae8
+ 
+ 
 ### AWS环境下 RDB环境构筑
 	1. aws中rds实例的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
 	2. AWS Lambda 函数
