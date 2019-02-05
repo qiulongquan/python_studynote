@@ -86,11 +86,11 @@ django项目实战之购物系统
 
 2. template/base.html 中的form表单 
 - 上传文件的 form 表单   
-- form id="form" action="/" method="post" runat="server" enctype="multipart/form-data">   
-- input id="files" name="file" multiple="multiple" style="display: none;" class="file-addr" type="file" />   
-- {% csrf_token %}   
-- input id="bt" type="button" value="Upload File" />   
-- /form>   
+    form id="form" action="/" method="post" runat="server" enctype="multipart/form-data">   
+    input id="files" name="file" multiple="multiple" style="display: none;" class="file-addr" type="file" />   
+    {% csrf_token %}   
+    input id="bt" type="button" value="Upload File" />   
+    /form>   
 - {% csrf_token %} 是Django为了防止跨站请求攻击,所做的一个防护措施， 以后我们form表单提交按钮前都应该加上这个 {% csrf_token %}。 
 
 3. 【PythonのORM】SQLAlchemyで基本的なSQLクエリまとめ
