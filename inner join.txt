@@ -1,0 +1,16 @@
+inner join   2个表结合  
+
+SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo
+FROM Persons
+INNER JOIN Orders
+ON Persons.Id_P=Orders.Id_P
+ORDER BY Persons.LastName
+
+左边链接   左边的显示所有的记录 右边的有匹配的显示没有的就空着
+右边链接	右边的显示所有的记录 左边的有匹配的显示没有的就空着
+内链接	左右两边根据条件匹配的显示，不匹配的不显示
+使用在(+)来表示左连接，哪个带(+)哪个需要条件符合的，另一个全部的。(+的操作只有在oracle里面才有)
+SQL> SELECT M.NAME, N.NAME, M.SEX, N.GRADE
+  2  FROM M, N
+  3  WHERE M.NAME=N.NAME(+);
+表示 M表记录全部显示 N表里面有匹配的显示 没有就空着

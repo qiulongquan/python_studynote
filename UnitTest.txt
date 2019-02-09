@@ -1,0 +1,32 @@
+python unittestモジュールを用いて、python言語で記述されたプログラムの単体テストを行う方法を書いた
+実行方法は概ね以下の通り
+1.  import unittestして、unittest.TestCaseを継承したクラスのなかにテストケースを書く
+2.  この際、AssetHOGEHOGEというようなメソッドで
+3.  unittest.main()を叩くことでテストを実行する。いろいろなモジュールのテストを一挙に実行したければ、discoverを使う
+
+
+unittest書き方
+https://qiita.com/aomidro/items/3e3449fde924893f18ca
+
+サンプル
+
+HelloWorld.py ((root directory name) 内)
+
+class HelloWorld:
+  def __init__(self):
+    self.message = 'Hello world!'
+
+
+
+HelloWorld_tst.py ((root directory name) 内)
+
+import unittest
+from HelloWorld import HelloWorld
+
+class MyTestCase(unittest.TestCase):
+  def test_default_greeting_set(self):
+    hw = HelloWorld()
+    self.assertEqual(hw.message, 'Hello world!')
+
+if __name__ == '__main__':
+  unittest.main()

@@ -1,0 +1,111 @@
+使用 PuTTY 从 Windows 连接到 Linux 实例
+https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/putty.html
+
+aws address
+https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#Instances:sort=monitoring
+
+使用 AWS CodeDeploy 将代码部署至虚拟机
+https://aws.amazon.com/cn/getting-started/tutorials/deploy-code-vm/?trk=gs_card
+
+AWS 10 分钟教程
+https://aws.amazon.com/cn/getting-started/tutorials/
+
+AWS注册域名　　需要少量的费用
+https://aws.amazon.com/cn/getting-started/tutorials/get-a-domain/?trk=gs_card
+
+AWS  Python 开发者中心
+https://aws.amazon.com/cn/developer/language/python/
+
+在 AWS 上设置 CI/CD 管道
+CI/CD	上記の作業を AWS CodeBuild で行う。
+https://aws.amazon.com/cn/getting-started/projects/set-up-ci-cd-pipeline/?trk=gs_card
+
+mysql  数据库 AWS 
+https://aws.amazon.com/cn/getting-started/tutorials/create-mysql-db/?trk=gs_card
+
+向 Python 应用程序环境中添加 Amazon RDS 数据库实例  
+https://docs.aws.amazon.com/zh_cn/elasticbeanstalk/latest/dg/create-deploy-python-rds.html
+
+使用github：  ssh -i 'd:\.ssh\mykey1.pem' ec2-user@52.194.192.XXX
+
+使用putty：    ec2-user@ec2-52-194-192-XXX.ap-northeast-1.compute.amazonaws.com
+
+测试数据库连接状态
+nc -zv aa1nn76roishu6r.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com 3306
+
+不能直接root 进去后 sudo su即可
+AWS的ec2-user切换到root登陆后直接sudo -i
+表示以root身份登录，进程的实际用户ID和有效用户ID都变成了root，主目录也切换为root的主目录。
+
+linux下 做link 方法
+sudo ln -s /usr/python/lib/python3.7/site-packages/django/bin/django-admin.py /usr/local/bin
+
+通过运行带 pip install 选项的 --upgrade 来确保您使用的是 EB CLI 的最新版本：
+sudo pip install --upgrade awsebcli
+
+通过requirements.txt里面的库文件 自动安装
+pip install -r requirements.txt
+
+【PythonのORM】SQLAlchemyで基本的なSQLクエリまとめ
+https://qiita.com/bokotomo/items/a762b1bc0f192a55eae8
+
+# template/base.html 中的form表单 
+
+# 上传文件的 form 表单
+
+<form id="form" action="/" method="post" runat="server" enctype="multipart/form-data">
+
+<input id="files" name="file" multiple="multiple" style="display: none;" class="file-addr" type="file" />
+
+{% csrf_token %}
+
+<input id="bt" type="button" value="Upload File" />
+
+</form>
+
+
+{% csrf_token %} 是Django为了防止跨站请求攻击,所做的一个防护措施， 以后我们form表单提交按钮前都应该加上这个 {% csrf_token %}。 
+
+
+
+前端页面的处理: 模板文件是一种文本文件,本项目中base.html为模本文件，content.html为目标文件,模板文件主要由目标文件的内容组成,辅以模板的特殊语法用于替换动态的内容. 
+这里我们需要提一些 Django的模板语法，如下:
+
+
+{{}} :用于变量替换。
+
+{%for i in content%}{{i}}{%endfor%} : for 循环
+
+{%extends "base.html"%} : 用于指定父模板文件
+
+{%block name %} ··· {%endblock%} :用于指定被替换的内容,内容名称为 name.
+
+{%if 条件%} .....{% elif 条件%} ....{%else%}... {%endif%} :用于 if 语句
+
+
+
+AWS Lambda 函数
+https://aws.amazon.com/jp/getting-started/tutorials/run-serverless-code/?trk=gs_card
+您以一个或多个 Lambda 函数 的形式将应用程序代码上传到 AWS Lambda（一种计算服务）。然后，AWS Lambda 代表您执行代码。AWS Lambda 负责预配置和管理服务器以便在调用时运行代码。
+
+AWS SAM
+The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build serverless applications on AWS.
+
+サーバーレス
+サーバーレスにより、俊敏性が強化され、総所有コストを抑えたモダンアプリケーションを構築できます。
+サーバーレスアプリケーションを構築することで、開発者は、クラウドでもオンプレミスでも、サーバーやランタイムの管理や操作に煩わされることなく、主力製品に集中できます。
+このような経費の削減によって、開発者は、拡張性と信頼性の高い優れた製品の開発に費やす時間とエネルギーを取り戻すことができます。
+
+
+环境构筑的时候 需要安装的 基础库
+sudo yum -y install zlib zlib-devel
+sudo yum -y install bzip2 bzip2-devel
+sudo yum -y install ncurses ncurses-devel
+sudo yum -y install readline readline-devel
+sudo yum -y install openssl openssl-devel
+sudo yum -y install openssl-static
+sudo yum -y install xz lzma xz-devel
+sudo yum -y install sqlite sqlite-devel
+sudo yum -y install gdbm gdbm-devel
+sudo yum -y install tk tk-devel
+sudo yum -y install libffi libffi-devel

@@ -1,0 +1,131 @@
+insert
+import MySQLdb
+
+# MySQLの接続情報（各自の環境にあわせて設定のこと）
+db_config = {
+    'host': 'localhost',
+    'db': 'sample_db',  # Database Name
+    'user': 'testuser',
+    'passwd': 'testpass',
+    'charset': 'utf8',
+}
+
+try:
+    # 接続
+    conn = MySQLdb.connect(host=db_config['host'], db=db_config['db'], user=db_config['user'],
+                           passwd=db_config['passwd'], charset=db_config['charset'])
+　
+　　# サンプルデータの追加
+　　cursor.execute("INSERT INTO students VALUES (1, 'SMITH')")
+ 
+　　# プレースホルダの使用例
+　　# 1つの場合には最後に , がないとエラー。('JOHNSON') ではなく ('JOHNSON',)
+　　cursor.execute("INSERT INTO students VALUES (2, %s)", ('JOHNSON',))
+　　cursor.execute("INSERT INTO students VALUES (%s, %s)", (3, 'WILLIAMS'))
+　　# 名前付きプレースホルダ
+　　cursor.execute("INSERT INTO students VALUES (%(id)s, %(name)s)", {'id': 4, 'name': 'JONES'})
+ 
+　　# 複数レコードを一度に挿入 executemany メソッドを使用
+　　persons = [
+    　(5, 'BROWN'),
+    　(6, 'DAVIS'),
+　　]
+　　
+　　cursor.executemany("INSERT INTO students VALUES (%s, %s)", persons)
+ 
+　　# コミット（データ保存を実行）
+　　# commit() を忘れてると保存されないことに注意
+　　conn.commit()
+except MySQLdb.Error as ex:
+print('MySQL Error: ', ex)
+
+
+
+
+select
+cursor.execute('SELECT * FROM students ORDER BY id ASC')
+for row in cursor:
+    print(row)
+    '''
+    (1, 'SMITH')
+    (2, 'JOHNSON')
+    (3, 'WILLIAMS')
+    (4, 'JONES')
+    (5, 'BROWN')
+    (6, 'DAVIS')
+    '''
+ 
+# ループ処理
+cursor.execute('SELECT * FROM students ORDER BY id ASC')
+for row in cursor.fetchall():
+    print(row)
+    '''
+    (1, 'SMITH')
+    (2, 'JOHNSON')
+    (3, 'WILLIAMS')
+    (4, 'JONES')
+    (5, 'BROWN')
+    (6, 'DAVIS')
+    '''
+
+
+
+# デフォルトの結果セットはタプル
+cursor.execute('SELECT * FROM students ORDER BY id ASC LIMIT 3')
+for row in cursor:
+    print(row[0], row[1])
+
+
+# 結果セットを辞書型で取得
+dict_cursor = conn.cursor(MySQLdb.cursors.DictCursor)
+dict_cursor.execute('SELECT * FROM students ORDER BY id ASC LIMIT 3')
+for row in dict_cursor:
+    print(row['id'], row['name'])
+
+
+update
+cursor.execute('UPDATE students SET name=%s WHERE id=1', ('MILLER',))
+cursor.execute('UPDATE students SET name=%s WHERE id=%s', ('WILSON', 2))
+conn.commit()
+
+
+
+
+delete
+cursor.execute('DELETE FROM students WHERE id > 3')
+conn.commit()
+
+
+
+
+import MySQLdb
+ 
+def db_sample():
+    """ 接続サンプル """
+ 
+    # 接続する 
+    con = MySQLdb.connect(
+            user='db user',
+            passwd='db password',
+            host='localhost',
+            db='sample')
+ 
+    # カーソルを取得する
+    cur= con.cursor()
+     
+    # クエリを実行する
+    sql = "select id, body, post_code, created from posts"
+    cur.execute(sql)
+ 
+    # 実行結果をすべて取得する
+    rows = cur.fetchall()
+     
+    # 一行ずつ表示する
+    for row in rows:
+        print(row)
+ 
+    cur.close
+    con.close
+ 
+if __name__ == "__main__":
+    db_sample()
