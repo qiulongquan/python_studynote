@@ -98,6 +98,7 @@ django项目实战之购物系统
  
 ### AWS环境下 RDB环境构筑
 	1. aws中rds实例的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
+		* 测试数据库连接状态  nc -zv aa1nn76roishu6r.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com 3306
 	2. AWS Lambda 函数
 	    * 您以一个或多个 Lambda 函数 的形式将应用程序代码上传到 AWS Lambda（一种计算服务）。然后，AWS Lambda 代表您执行代码。AWS Lambda 负责预配置和管理服务器以便在调用时运行代码。
 	    * https://aws.amazon.com/jp/getting-started/tutorials/run-serverless-code/?trk=gs_card

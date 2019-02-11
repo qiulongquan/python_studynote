@@ -16,8 +16,20 @@ python3 manage.py migrate
 查看是不是连接有问题。
 
 
-家里的环境下，改成mysql 连接然后修改程序加入
+需要修改增加的功能
+家里的环境下，改成mysql 连接然后修改程序加入   ok
+大文件 上传 下载 5M以上     https://www.tuicool.com/articles/bUnMfu
+中文文件名或者文件内容是中文的乱码问题   
+sqlite3  已经解决乱码问题  ok
+mysql  还没有解决   暂时不解决了  使用sqlite3 更合适
+点击文件名作为详细信息入口     ok
+FileLink 需要真实的ip地址输入     ok
 删除功能  加入再次确定对话框   ok
 搜索功能 加入模糊搜索    ok
 文件上传的时候检测是否有相同文件名文件已经上传，如果有就停止操作，显示提示框    ok
 显示上传文件信息功能    ok
+
+
+django-env-filemanage.ap-northeast-1.elasticbeanstalk.com
+eb-FileManage-dev.ap-northeast-1.elasticbeanstalk.com
+aa15zybgfzpb0bz.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com
