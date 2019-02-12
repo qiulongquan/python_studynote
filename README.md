@@ -98,7 +98,7 @@ django项目实战之购物系统
  
 ### AWS环境下 RDB环境构筑
 	1. aws中rds实例的vpc和安全组需要设定，否则无法连接上数据库。或者加入一个default安全组（入站 和 出站规则都改为全部可），然后把default规则加入到rds实例的安全组中去。
-	* 测试数据库连接状态  nc -zv aa1nn76roishu6r.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com 3306
+		* 测试数据库连接状态  nc -zv aa1nn76roishu6r.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com 3306
 	2. AWS Lambda 函数
 	    * 您以一个或多个 Lambda 函数 的形式将应用程序代码上传到 AWS Lambda（一种计算服务）。然后，AWS Lambda 代表您执行代码。AWS Lambda 负责预配置和管理服务器以便在调用时运行代码。
 	    * https://aws.amazon.com/jp/getting-started/tutorials/run-serverless-code/?trk=gs_card
@@ -117,6 +117,32 @@ django项目实战之购物系统
 	8. CI/CD   在AWS 上设置 CI/CD 管道    
 	    * https://aws.amazon.com/cn/getting-started/projects/set-up-ci-cd-pipeline/?trk=gs_card	
 	    * 上記の作業を AWS CodeBuild で行う。
+
+		
+### 命令行登录Mysql，远程登录Mysql的方法
+
+    在shell终端或者ssh终端，或者cmd窗口远程登录 端口为3308，用户名为user1，ip为 182.167.12.3 的mysql服务器的命令是
+    mysql -h 182.167.12.3 -u user1 -p -P 3308
+
+    [yaXXXXX@XXXXX-hadoop06-prd-yz ~]$  mysql -h 182.167.12.3 -u user1 -p -P 3308
+
+    Enter password: 
+    --------------------- 
+    来源：CSDN 
+    原文：https://blog.csdn.net/helloxiaozhe/article/details/76229074 
+
+    sample: mysql -h aa15zybgfzpb0bz.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com -u 'qlqqlqqlq' -p  -P 3306
+
+### aws django mysql中文乱码问题
+    建立数据库后设置也可以解决问题
+    在mysql-front 里面找到要处理的表，点击右键选择属性
+    修改 字符集为utf8   修改字符集校对  utf8_general_ci
+    然后确定保存就可以了  不需要重新启动aws环境也不需要修改代码。
+
+    可以参考下面的方法 但是这个方法有点麻烦。
+    https://blog.csdn.net/zhangxuehui1991/article/details/77923319   解决问题了
+    https://blog.csdn.net/jianfengwen/article/details/54924094
+
 
 
 你看过django的admin源码么;    
