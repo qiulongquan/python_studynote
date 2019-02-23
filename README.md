@@ -1,34 +1,33 @@
 python_studynote
 ===========================
 python学习笔记
-	
-* 现在   python后端开发   大数据处理hadoop  数据分析   +   AWS 掌握
 
-* 将来目标   机器学习      数据挖掘  
+- 现在   python后端开发   大数据处理hadoop  数据分析   +   AWS 掌握
+- 将来目标   机器学习      数据挖掘  
 
 ===========================
 
 ### 每天写一些代码，并且发布到github上去  
-	* GitHubを用いたチーム開発の実務経験
-	* github 使用方法 
-		* https://blog.csdn.net/wangrenbao123/article/details/55511461   这个介绍的非常详细 首先推荐查看
-		* http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html   这个比较简单 很多详细的功能没有介绍
-		* https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8   这个介绍的不错可以参考    
-		* gitbash 链接hostname：    
-		（mykey1.pem是密钥文件，ec2-user是用户名，52.194.192.252是dns公有ip ） ssh -i 'd:\.ssh\mykey1.pem' ec2-user@52.194.192.252 
+- GitHubを用いたチーム開発の実務経験
+- github 使用方法 
+  - https://blog.csdn.net/wangrenbao123/article/details/55511461   这个介绍的非常详细 首先推荐查看
+  - http://blog.sina.com.cn/s/blog_4d9c3fec0102w7g9.html   这个比较简单 很多详细的功能没有介绍
+  - https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8   这个介绍的不错可以参考    
+  - gitbash 链接hostname：    
+    - （mykey1.pem是密钥文件，ec2-user是用户名，52.194.192.252是dns公有ip ） ssh -i 'd:\.ssh\mykey1.pem' ec2-user@52.194.192.252 
 		
-	* unittest書き方
-	    * python unittestモジュールを用いて、python言語で記述されたプログラムの単体テストを行う方法を書いた実行方法は概ね以下の通り
-	    	1. import unittestして、unittest.TestCaseを継承したクラスのなかにテストケースを書く
-	    	2. この際、AssetHOGEHOGEというようなメソッドで
-	    	3. unittest.main()を叩くことでテストを実行する。いろいろなモジュールのテストを一挙に実行したければ、discoverを使う
-	    * https://qiita.com/aomidro/items/3e3449fde924893f18ca    详细的使用方法介绍
+  - unittest書き方
+    - python unittestモジュールを用いて、python言語で記述されたプログラムの単体テストを行う方法を書いた実行方法は概ね以下の通り
+      - import unittestして、unittest.TestCaseを継承したクラスのなかにテストケースを書く
+      - この際、AssetHOGEHOGEというようなメソッドで
+      - unittest.main()を叩くことでテストを実行する。いろいろなモジュールのテストを一挙に実行したければ、discoverを使う
+      - https://qiita.com/aomidro/items/3e3449fde924893f18ca    详细的使用方法介绍
 		
 
-* 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
+- 平时多刷刷leetcode，看看剑指offer/面试金典，都是套路啊~~
 ![description1](https://github.com/qiulongquan/python_studynote/blob/master/image/11.JPG "description1")
-	* 剑指offer牛客网      面试题目 刷题练习
-	* https://www.nowcoder.com/courses/10
+  - 剑指offer牛客网      面试题目 刷题练习
+  - https://www.nowcoder.com/courses/10
 	
 
 
