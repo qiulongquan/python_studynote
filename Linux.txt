@@ -1,0 +1,2 @@
+linux下 做link 方法
+sudo ln -s /usr/python/lib/python3.7/site-packages/django/bin/django-admin.py /usr/local/bin
