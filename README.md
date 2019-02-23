@@ -32,21 +32,28 @@ python学习笔记
 
 
 ## Python（Django）のご経験     重要
-麦子学院
-http://www.maiziedu.com/line/python/#
-django项目实战之购物系统
-本课程将使用Python语言与Django Web开发框架搭建一个强大的购物系统。通过本项目的学习，全面系统地掌握使用Django开发出功能强大的网站， 更重要地是让学员掌握Web开发从设计到部署的一整套流程，有能力根据自身需求去实现功能或者在现有基础上进行扩展。
+'''
+麦子学院<br>
+http://www.maiziedu.com/line/python/#<br>
+django项目实战之购物系统<br>
+本课程将使用Python语言与Django Web开发框架搭建一个强大的购物系统。通过本项目的学习，全面系统地掌握使用Django开发出功能强大的网站，<br>
+更重要地是让学员掌握Web开发从设计到部署的一整套流程，有能力根据自身需求去实现功能或者在现有基础上进行扩展。<br>
+'''
 
 ### web开发框架   django
-	 M:模型（Model）,负责业务对象和数据库的关系映射。
-	 T:模板（Template）,负责如何把页面展示给用户。
-	 V:视图（View）,负责业务逻辑，并在适当时候调用模型和模板。
+'''
+  M:模型（Model）,负责业务对象和数据库的关系映射。
+  T:模板（Template）,负责如何把页面展示给用户。
+  V:视图（View）,负责业务逻辑，并在适当时候调用模型和模板。
 ![description2](https://github.com/qiulongquan/python_studynote/blob/master/image/mtv结构图.jpg "description2")
+'''
 
 ### django环境搭建
-	Python==3.6.4
-	Django==2.1.1 
-	要使用新版本的django 2.1.1
+'''
+Python==3.6.4
+Django==2.1.1 
+要使用新版本的django 2.1.1
+'''
 
 ### linux 下 安装python3 和 django环境
 1. 错误：no acceptable C compiler found in $PATH
@@ -82,17 +89,19 @@ django项目实战之购物系统
 - {%block name %} ··· {%endblock%} :用于指定被替换的内容,内容名称为 name.
 - {%if 条件%} .....{% elif 条件%} ....{%else%}... {%endif%} :用于 if 语句
 
-2. template/base.html 中的form表单 
-- 上传文件的 form 表单   
-    form id="form" action="/" method="post" runat="server" enctype="multipart/form-data">   
+2. template/base.html 中的form表单<br> 
+- 上传文件的 form 表单<br> 
+'''
+    <form id="form" action="/" method="post" runat="server" enctype="multipart/form-data">   
     input id="files" name="file" multiple="multiple" style="display: none;" class="file-addr" type="file" />   
     {% csrf_token %}   
     input id="bt" type="button" value="Upload File" />   
-    /form>   
+    </form>
+'''
 - {% csrf_token %} 是Django为了防止跨站请求攻击,所做的一个防护措施， 以后我们form表单提交按钮前都应该加上这个 {% csrf_token %}。 
 
 3. 【PythonのORM】SQLAlchemyで基本的なSQLクエリまとめ
-	* https://qiita.com/bokotomo/items/a762b1bc0f192a55eae8
+- https://qiita.com/bokotomo/items/a762b1bc0f192a55eae8
  
  
 ### AWS环境下 RDB环境构筑
@@ -119,7 +128,7 @@ django项目实战之购物系统
 
 		
 ### 命令行登录Mysql，远程登录Mysql的方法
-
+'''
     在shell终端或者ssh终端，或者cmd窗口远程登录 端口为3308，用户名为user1，ip为 182.167.12.3 的mysql服务器的命令是
     mysql -h 182.167.12.3 -u user1 -p -P 3308
 
@@ -131,6 +140,7 @@ django项目实战之购物系统
     原文：https://blog.csdn.net/helloxiaozhe/article/details/76229074 
 
     sample: mysql -h aa15zybgfzpb0bz.cqnfpkbdck9a.ap-northeast-1.rds.amazonaws.com -u 'qlqqlqqlq' -p  -P 3306
+'''
 
 ### aws django mysql中文乱码问题
     建立数据库后设置也可以解决问题
