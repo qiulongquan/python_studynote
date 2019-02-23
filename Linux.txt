@@ -1,2 +1,2 @@
-linuxÏÂ ×ölink ·½·¨
+ï»¿linuxä¸‹ åšlink æ–¹æ³•
 sudo ln -s /usr/python/lib/python3.7/site-packages/django/bin/django-admin.py /usr/local/bin
