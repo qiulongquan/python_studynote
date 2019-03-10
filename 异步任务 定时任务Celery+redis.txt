@@ -1,0 +1,20 @@
+在程序的运行过程中，我们经常会碰到一些耗时耗资源的操作，为了避免它们阻塞主程序的运行，我们经常会采用多线程或异步任务。比如，在 Web 开发中，对新用户的注册，我们通常会给他发一封激活邮件，而发邮件是个 IO 阻塞式任务，如果直接把它放到应用当中，就需要等邮件发出去之后才能进行下一步操作，此时用户只能等待再等待。更好的方式是在业务逻辑中触发一个发邮件的异步任务，而主程序可以继续往下运行。
+
+Celery 是一个强大的分布式任务队列，它可以让任务的执行完全脱离主程序，甚至可以被分配到其他主机上运行。我们通常使用它来实现异步任务（async task）和定时任务（crontab）
+
+下面的这个参考文献 写的很清楚 关于 celery+redis
+
+异步任务神器 Celery
+http://funhacks.net/2016/12/13/celery/
+
+在 Django 项目中使用 Celery
+https://www.cnblogs.com/zh605929205/p/9846914.html
+
+celery在Django中的集成使用
+里面有关于耗时工作 比如邮件发送 可以把邮件发送交给celery处理，然后继续主程序剩下的部分。
+https://www.cnblogs.com/dengshihuang/p/8257547.html
+
+Django集成celery实战小项目
+主要是一个加法计数器的功能，提交task后 后台30秒延时然后执行任务，前台不受影响可以继续增加任务。
+已经做出了实例   github上面的 test-celery
+https://www.cnblogs.com/mysql-dba/p/6895190.html
