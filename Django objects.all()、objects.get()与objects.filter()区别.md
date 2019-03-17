@@ -1,3 +1,4 @@
+```
 Django objects.all()、objects.get()与objects.filter()区别
 前言
 本文主要介绍的是关于Django objects.all()、objects.get()与objects.filter()直接区别的相关内容 
@@ -37,7 +38,7 @@ __month 日期字段的月份
 __day 日期字段的日
 __isnull=True/False
 --------------------- 
-作者：左旋zY 
+
 来源：CSDN 
 原文：https://blog.csdn.net/z5622139/article/details/77683804 
-版权声明：本文为博主原创文章，转载请附上博文链接！
+```
