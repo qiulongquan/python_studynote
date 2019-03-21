@@ -1,0 +1,23 @@
+﻿https://blog.csdn.net/omnispace/article/details/79157639
+
+方法（二）激活码激活
+
+
+修改hosts文件
+将0.0.0.0 account.jetbrains.com添加到hosts文件最后，注意hosts文件无后缀，如果遇到无法修改或权限问题，可以采用覆盖的方法去替换hosts文件
+
+修改后请检查hosts文件是否修改，激活码无法激活的原因99.99%是因为hosts没有修改正确
+
+Windows系统hosts文件路径为：c:\windows\system32\drivers\etc
+Mac和Ubantu(Linux)系统hosts文件路径为：/etc
+
+ 
+复制激活码
+打开PyCharm选择Activation code激活，然后复制下面的激活码点击激活。
+
+注：有效期至2019年9月 
+--------------------- 
+作者：Omni-Space 
+来源：CSDN 
+原文：https://blog.csdn.net/omnispace/article/details/79157639 
+版权声明：本文为博主原创文章，转载请附上博文链接！
